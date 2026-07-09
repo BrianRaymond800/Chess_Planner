@@ -7,6 +7,6 @@ public class ValidMoveFinderTest {
     @Test
     void TestKingsPawn(){
         ValidMoveFinder finder = new ValidMoveFinder();
-        Assertions.assertTrue(finder.isValidMove("RNBKQBNRPPPPPPPP00000000000000000000000000000000pppppppprnbkqbnr", "e4"));
+        Assertions.assertTrue(finder.isValidMove(true, "RNBKQBNRPPPPPPPP00000000000000000000000000000000pppppppprnbkqbnr", "e4"));
     }
 }
