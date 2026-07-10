@@ -125,11 +125,19 @@
       <option name="project" value="LOCAL" />
       <updated>1783628358217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a boolean to ValidMoveFinder for whose turn it is.">
+      <created>1783629037341</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783629037341</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base Logic for identifying a valid move." />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Logic for identifying a valid move." />
+    <MESSAGE value="Added a boolean to ValidMoveFinder for whose turn it is." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a boolean to ValidMoveFinder for whose turn it is." />
   </component>
 </project>
