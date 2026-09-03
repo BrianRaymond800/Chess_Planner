@@ -32,11 +32,11 @@ public class ValidMoveFinder {
     }
     public boolean isValidMove(boolean white, String position, String move){
         int offset = convertFileToOffset(move.charAt(0));
-        if(white == true){
+        if(white){
             if (move.charAt(1) == 4){
-                    if(position.charAt(24 + offset) == '0' && (position.charAt(16 + offset) == 'P' || (position.charAt(16 + offset) == '0' && position.charAt(8) == 'P'))){
-                        return true;
-                    }
+                if(position.charAt(24 + offset) == '0' && (position.charAt(16 + offset) == 'P' || (position.charAt(16 + offset) == '0' && position.charAt(8) == 'P'))){
+                    return true;
+                }
             } else if(position.charAt(16 + offset) == '0' && position.charAt(8 + offset) == 'P'){
                 return true;
             }
