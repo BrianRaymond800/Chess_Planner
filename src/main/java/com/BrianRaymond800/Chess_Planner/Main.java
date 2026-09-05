@@ -1,6 +1,7 @@
 package com.BrianRaymond800.Chess_Planner;
-import javax.swing.JFrame;
+import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +12,11 @@ public class Main {
         frame.setSize(1600, 900);
         frame.setVisible(true);
         frame.getContentPane().setBackground(Color.black);
+
+        JLabel boardLabel = new JLabel();
+        URL boardURL = Main.class.getResource("/board.png");
+        ImageIcon boardImage = new ImageIcon(boardURL);
+        boardLabel.setIcon(boardImage);
+        frame.add(boardLabel);
     }
 }
