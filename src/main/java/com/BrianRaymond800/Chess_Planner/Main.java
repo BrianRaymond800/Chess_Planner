@@ -10,7 +10,6 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setSize(1400, 837);
-        frame.setVisible(true);
         frame.getContentPane().setBackground(Color.black);
 
         URL boardURL = Main.class.getResource("/board.png");
@@ -21,5 +20,6 @@ public class Main {
         boardLabel.setVerticalAlignment(JLabel.TOP);
 
         frame.add(boardLabel);
+        frame.setVisible(true);
     }
 }
