@@ -15,11 +15,23 @@ public class Main {
         URL boardURL = Main.class.getResource("/board.png");
         ImageIcon boardImage = new ImageIcon(boardURL);
 
+        URL blackRookURL = Main.class.getResource("/blackRook.png");
+        ImageIcon blackRookImage = new ImageIcon(blackRookURL);
+
         JLabel boardLabel = new JLabel();
         boardLabel.setIcon(boardImage);
-        boardLabel.setVerticalAlignment(JLabel.TOP);
+        boardLabel.setBounds(0, 0, 800, 800);
 
-        frame.add(boardLabel);
+        JLabel blackRookLabel = new JLabel();
+        blackRookLabel.setIcon(blackRookImage);
+        blackRookLabel.setBounds(25, 25, 50, 50);
+
+        JLayeredPane board = new JLayeredPane();
+        board.setBounds(0, 0, 800, 800);
+        board.add(boardLabel, JLayeredPane.PALETTE_LAYER);
+        board.add(blackRookLabel, JLayeredPane.MODAL_LAYER);
+
+        frame.add(board);
         frame.setVisible(true);
     }
 }
