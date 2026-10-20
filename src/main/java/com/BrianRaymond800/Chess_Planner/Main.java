@@ -12,26 +12,23 @@ public class Main {
         frame.setSize(1400, 837);
         frame.getContentPane().setBackground(Color.black);
 
-        URL boardURL = Main.class.getResource("/board.png");
-        ImageIcon boardImage = new ImageIcon(boardURL);
-
-        URL blackRookURL = Main.class.getResource("/blackRook.png");
-        ImageIcon blackRookImage = new ImageIcon(blackRookURL);
-
-        JLabel boardLabel = new JLabel();
-        boardLabel.setIcon(boardImage);
-        boardLabel.setBounds(0, 0, 800, 800);
-
-        JLabel blackRookLabel = new JLabel();
-        blackRookLabel.setIcon(blackRookImage);
-        blackRookLabel.setBounds(25, 25, 50, 50);
-
         JLayeredPane board = new JLayeredPane();
         board.setBounds(0, 0, 800, 800);
-        board.add(boardLabel, JLayeredPane.PALETTE_LAYER);
-        board.add(blackRookLabel, JLayeredPane.MODAL_LAYER);
+        addBoardComponent("/board.png", new int[]{0, 0, 800, 800}, board, JLayeredPane.PALETTE_LAYER);
+        addBoardComponent("/blackRook.png", new int[]{25, 25, 50, 50}, board, JLayeredPane.MODAL_LAYER);
 
         frame.add(board);
         frame.setVisible(true);
+    }
+
+    public static void addBoardComponent(String componentPath, int[] dimensions, JLayeredPane board, Integer layer){
+        URL componentURL = Main.class.getResource(componentPath);
+        ImageIcon componentImage = new ImageIcon(componentURL);
+
+        JLabel componentLabel = new JLabel();
+        componentLabel.setIcon(componentImage);
+        componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
+
+        board.add(componentLabel, layer);
     }
 }

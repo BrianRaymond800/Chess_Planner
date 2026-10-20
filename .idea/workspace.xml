@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b97392-d320-4f3b-b2c8-b8659aa033e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/blackRook.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" afterDir="false" />
     </list>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1789243269109</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a piece to the board by switching to a JLayeredPane.">
+      <created>1792525034041</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1792525034041</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,6 +215,7 @@
     <MESSAGE value="Added the board to the frame." />
     <MESSAGE value="Adjusted frame size and board panel placement." />
     <MESSAGE value="Created BoardSetup, which contains information necessary to understand the state of the board and which moves are possible." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created BoardSetup, which contains information necessary to understand the state of the board and which moves are possible." />
+    <MESSAGE value="Added a piece to the board by switching to a JLayeredPane." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a piece to the board by switching to a JLayeredPane." />
   </component>
 </project>
