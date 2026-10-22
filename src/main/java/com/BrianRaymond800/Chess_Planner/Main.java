@@ -4,6 +4,9 @@ import java.awt.*;
 import java.net.URL;
 
 public class Main {
+
+    public char[] layout = {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'};
+
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setTitle("Chess Planner");
@@ -61,5 +64,23 @@ public class Main {
         componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
 
         board.add(componentLabel, layer);
+    }
+
+    public static String translatePieceToURL(char piece){
+        return switch (piece) {
+            case 'r' -> "/blackRook.png";
+            case 'n' -> "/blackKnight.png";
+            case 'b' -> "/blackBishop.png";
+            case 'q' -> "/blackQueen.png";
+            case 'k' -> "/blackKing.png";
+            case 'p' -> "/blackPawn.png";
+            case 'P' -> "/whitePawn.png";
+            case 'R' -> "/whiteRook.png";
+            case 'N' -> "/whiteKnight.png";
+            case 'B' -> "/whiteBishop.png";
+            case 'Q' -> "/whiteQueen.png";
+            case 'K' -> "/whiteKing.png";
+            default -> null;
+        };
     }
 }
