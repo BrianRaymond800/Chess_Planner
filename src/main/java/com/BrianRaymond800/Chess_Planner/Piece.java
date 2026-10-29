@@ -17,8 +17,8 @@ public class Piece extends JLabel {
             public void mousePressed(MouseEvent e) {
                 screenX = e.getXOnScreen();
                 screenY = e.getYOnScreen();
-                componentX = getX();
-                componentY = getY();
+                componentX = getX() + 50;
+                componentY = getY() + 50;
                 //Updates the coordinates
             }
 
