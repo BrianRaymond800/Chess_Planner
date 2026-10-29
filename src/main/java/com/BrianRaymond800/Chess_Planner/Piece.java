@@ -11,6 +11,7 @@ public class Piece extends JLabel {
             private int screenY = 0;
             private int componentX = 0;
             private int componentY = 0;
+            //Defines the coordinates of the piece and the mouse
 
             @Override
             public void mousePressed(MouseEvent e) {
@@ -18,6 +19,7 @@ public class Piece extends JLabel {
                 screenY = e.getYOnScreen();
                 componentX = getX();
                 componentY = getY();
+                //Updates the coordinates
             }
 
             @Override
@@ -26,6 +28,7 @@ public class Piece extends JLabel {
                 int deltaY = e.getYOnScreen() - screenY;
 
                 setLocation(componentX + deltaX, componentY + deltaY);
+                //Moves the piece with the mouse
             }
         };
 

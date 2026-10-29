@@ -8,6 +8,7 @@ import java.net.URL;
 public class Main {
 
     public static char[] layout = {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'};
+    //The initial layout of a chess board
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
@@ -16,6 +17,7 @@ public class Main {
         frame.setResizable(false);
         frame.setSize(1400, 837);
         frame.getContentPane().setBackground(Color.black);
+        //Setting up the basic frame
 
         JLayeredPane board = new JLayeredPane();
         board.setBounds(0, 0, 800, 800);
@@ -26,6 +28,7 @@ public class Main {
                 addBoardComponent(translatePieceToURL(layout[j + (i * 8)]), new int[]{25 + (j * 100), 25 + (i * 100), 50, 50}, board, JLayeredPane.MODAL_LAYER);
             }
         }
+        //Adding the board and pieces
 
         frame.add(board);
         frame.setLayout(null);
@@ -41,10 +44,12 @@ public class Main {
                 Piece componentLabel = new Piece();
                 componentLabel.setIcon(componentImage);
                 componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
+                //Creates the board and each piece
 
                 if(!componentPath.equals("/board.png")) {
                     componentLabel.setupDrag();
                 }
+                //Only the pieces can be moved
 
                 board.add(componentLabel, layer);
             }
@@ -66,6 +71,7 @@ public class Main {
             case 'Q' -> "/whiteQueen.png";
             case 'K' -> "/whiteKing.png";
             default -> null;
+            //Translates the one character piece reference to the image file path
         };
     }
 }
