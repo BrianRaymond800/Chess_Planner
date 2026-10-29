@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b97392-d320-4f3b-b2c8-b8659aa033e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" afterDir="false" />
     </list>
@@ -230,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1792632127450</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactored the board setup code.">
+      <created>1792645343348</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1792645343348</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +256,7 @@
     <MESSAGE value="Added the remaining board sprites." />
     <MESSAGE value="Created the initial board setup." />
     <MESSAGE value="Created translatePieceToURL() to convert a character to a piece." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created translatePieceToURL() to convert a character to a piece." />
+    <MESSAGE value="Refactored the board setup code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored the board setup code." />
   </component>
 </project>

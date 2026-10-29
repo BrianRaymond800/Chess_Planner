@@ -35,7 +35,7 @@ public class Main {
             if (componentURL != null) {
                 ImageIcon componentImage = new ImageIcon(componentURL);
 
-                JLabel componentLabel = new JLabel();
+                Piece componentLabel = new Piece();
                 componentLabel.setIcon(componentImage);
                 componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
 
