@@ -1,48 +1,35 @@
 package com.BrianRaymond800.Chess_Planner;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 
 public class Piece extends JLabel {
-    ImageIcon image;
-    Point imageCorner;
-    Point previousPoint;
+    public void setupDrag() {
+        MouseAdapter dragListener = new MouseAdapter() {
+            private int screenX = 0;
+            private int screenY = 0;
+            private int componentX = 0;
+            private int componentY = 0;
 
-    Piece(){
-        imageCorner = new Point(0, 0);
-        ClickListener clickListener = new ClickListener();
-        DragListener dragListener = new DragListener();
-        this.addMouseListener(clickListener);
-        this.addMouseMotionListener(dragListener);
-    }
+            @Override
+            public void mousePressed(MouseEvent e) {
+                screenX = e.getXOnScreen();
+                screenY = e.getYOnScreen();
+                componentX = getX();
+                componentY = getY();
+            }
 
-    public void paintComponent(Graphics g){
-        super.paintComponent(g);
-        image.paintIcon(this, g, (int) imageCorner.getX(), (int) imageCorner.getY());
-    }
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                int deltaX = e.getXOnScreen() - screenX;
+                int deltaY = e.getYOnScreen() - screenY;
 
-    private class ClickListener extends MouseAdapter {
-        public void mousePressed(MouseEvent e) {
-            previousPoint = e.getPoint();
-        }
-    }
+                setLocation(componentX + deltaX, componentY + deltaY);
+            }
+        };
 
-    private class DragListener extends MouseMotionAdapter {
-        public void mouseDragged(MouseEvent e) {
-            Point currentPoint = e.getPoint();
-            imageCorner.translate(
-                    (int) (currentPoint.getX() - previousPoint.getX()),
-                    (int) (currentPoint.getY() - previousPoint.getY())
-            );
-            previousPoint = currentPoint;
-            repaint();
-        }
-    }
-
-    public void setImage(ImageIcon componentImage) {
-        image = componentImage;
+        addMouseListener(dragListener);
+        addMouseMotionListener(dragListener);
     }
 }

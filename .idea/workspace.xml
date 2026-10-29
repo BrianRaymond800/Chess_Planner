@@ -245,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1793237446296</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added the ability to move pieces around the board.">
+      <created>1793251272854</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1793251272854</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -265,6 +272,7 @@
     <MESSAGE value="Created translatePieceToURL() to convert a character to a piece." />
     <MESSAGE value="Refactored the board setup code." />
     <MESSAGE value="Added a Piece class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a Piece class." />
+    <MESSAGE value="Added the ability to move pieces around the board." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to move pieces around the board." />
   </component>
 </project>

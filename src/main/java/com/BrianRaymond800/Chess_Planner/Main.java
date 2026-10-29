@@ -1,6 +1,8 @@
 package com.BrianRaymond800.Chess_Planner;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.net.URL;
 
 public class Main {
@@ -26,6 +28,7 @@ public class Main {
         }
 
         frame.add(board);
+        frame.setLayout(null);
         frame.setVisible(true);
     }
 
@@ -36,8 +39,10 @@ public class Main {
                 ImageIcon componentImage = new ImageIcon(componentURL);
 
                 Piece componentLabel = new Piece();
-                componentLabel.setImage(componentImage);
+                componentLabel.setIcon(componentImage);
                 componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
+
+                componentLabel.setupDrag();
 
                 board.add(componentLabel, layer);
             }
