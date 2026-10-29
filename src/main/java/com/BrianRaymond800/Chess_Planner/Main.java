@@ -36,7 +36,7 @@ public class Main {
                 ImageIcon componentImage = new ImageIcon(componentURL);
 
                 Piece componentLabel = new Piece();
-                componentLabel.setIcon(componentImage);
+                componentLabel.setImage(componentImage);
                 componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
 
                 board.add(componentLabel, layer);

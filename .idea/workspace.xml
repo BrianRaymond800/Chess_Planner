@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b97392-d320-4f3b-b2c8-b8659aa033e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1792645343348</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added a Piece class.">
+      <created>1793237446296</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1793237446296</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,6 +264,7 @@
     <MESSAGE value="Created the initial board setup." />
     <MESSAGE value="Created translatePieceToURL() to convert a character to a piece." />
     <MESSAGE value="Refactored the board setup code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the board setup code." />
+    <MESSAGE value="Added a Piece class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a Piece class." />
   </component>
 </project>
