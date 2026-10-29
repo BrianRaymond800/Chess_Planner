@@ -25,7 +25,7 @@ public class Main {
 
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
-                addBoardComponent(translatePieceToURL(layout[j + (i * 8)]), new int[]{25 + (j * 100), 25 + (i * 100), 50, 50}, board, JLayeredPane.MODAL_LAYER);
+                addBoardComponent(translatePieceToURL(layout[j + (i * 8)]), new int[]{(j * 100), (i * 100), 100, 100}, board, JLayeredPane.MODAL_LAYER);
             }
         }
         //Adding the board and pieces

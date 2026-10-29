@@ -27,7 +27,7 @@ public class Piece extends JLabel {
                 int deltaX = e.getXOnScreen() - screenX;
                 int deltaY = e.getYOnScreen() - screenY;
 
-                setLocation((componentX + deltaX) / 100 * 100 + 25, (componentY + deltaY) / 100 * 100 + 25);
+                setLocation((componentX + deltaX) / 100 * 100, (componentY + deltaY) / 100 * 100);
                 //Moves the piece with the mouse, but snaps to the grid
             }
         };

@@ -6,7 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="50b97392-d320-4f3b-b2c8-b8659aa033e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackBishop.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackBishop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackKing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackKing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackKnight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackKnight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackPawn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackPawn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackQueen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackQueen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackRook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/blackRook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whiteBishop.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whiteBishop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whiteKing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whiteKing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whiteKnight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whiteKnight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whitePawn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whitePawn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whiteQueen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whiteQueen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/whiteRook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/whiteRook.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1793299508174</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Pieces now snap to the grid of the chessboard when moved.">
+      <created>1793299805002</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1793299805002</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -296,6 +316,7 @@
     <MESSAGE value="Improved piece dragging code." />
     <MESSAGE value="The board itself can no longer be dragged." />
     <MESSAGE value="Added clarifying comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added clarifying comments." />
+    <MESSAGE value="Pieces now snap to the grid of the chessboard when moved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pieces now snap to the grid of the chessboard when moved." />
   </component>
 </project>
