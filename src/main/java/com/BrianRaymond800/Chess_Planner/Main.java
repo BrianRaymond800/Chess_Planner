@@ -42,7 +42,9 @@ public class Main {
                 componentLabel.setIcon(componentImage);
                 componentLabel.setBounds(dimensions[0], dimensions[1], dimensions[2], dimensions[3]);
 
-                componentLabel.setupDrag();
+                if(!componentPath.equals("/board.png")) {
+                    componentLabel.setupDrag();
+                }
 
                 board.add(componentLabel, layer);
             }
