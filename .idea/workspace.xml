@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50b97392-d320-4f3b-b2c8-b8659aa033e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BrianRaymond800/Chess_Planner/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ValidMoveFinderTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.ValidMoveFinderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1793301769076</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="The piece snapping is now aligned to the middle, rather than the top left.">
+      <created>1793301996679</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1793301996679</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -312,6 +320,7 @@
     <MESSAGE value="Added clarifying comments." />
     <MESSAGE value="Pieces now snap to the grid of the chessboard when moved." />
     <MESSAGE value="Improved the appearance of the pieces." />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved the appearance of the pieces." />
+    <MESSAGE value="The piece snapping is now aligned to the middle, rather than the top left." />
+    <option name="LAST_COMMIT_MESSAGE" value="The piece snapping is now aligned to the middle, rather than the top left." />
   </component>
 </project>

@@ -9,6 +9,7 @@ public class Main {
 
     public static char[] layout = {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'};
     //The initial layout of a chess board
+    private static Piece[][] position = new Piece[8][8];
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
@@ -25,7 +26,8 @@ public class Main {
 
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
-                addBoardComponent(translatePieceToURL(layout[j + (i * 8)]), new int[]{(j * 100), (i * 100), 100, 100}, board, JLayeredPane.MODAL_LAYER);
+                Piece currentPiece = addBoardComponent(translatePieceToURL(layout[j + (i * 8)]), new int[]{(j * 100), (i * 100), 100, 100}, board, JLayeredPane.MODAL_LAYER);
+                position[j][i] = currentPiece;
             }
         }
         //Adding the board and pieces
@@ -35,7 +37,7 @@ public class Main {
         frame.setVisible(true);
     }
 
-    public static void addBoardComponent(String componentPath, int[] dimensions, JLayeredPane board, Integer layer){
+    public static Piece addBoardComponent(String componentPath, int[] dimensions, JLayeredPane board, Integer layer){
         if(componentPath != null) {
             URL componentURL = Main.class.getResource(componentPath);
             if (componentURL != null) {
@@ -47,13 +49,32 @@ public class Main {
                 //Creates the board and each piece
 
                 if(!componentPath.equals("/board.png")) {
-                    componentLabel.setupDrag();
+                    componentLabel.setupDrag(newLocation -> {
+                        for(int i = 0; i < 8; i ++) {
+                            for(int j = 0; j < 8; j ++) {
+                                if(position[i][j] == componentLabel) {
+                                    position[i][j] = null;
+                                }
+                            }
+                        }
+                        //Remove the piece from its current location
+                        if(position[newLocation.x / 100][newLocation.y / 100] != null) {
+                            board.remove(position[newLocation.x / 100][newLocation.y / 100]);
+                        }
+                        //Capture anything at the new location
+                        position[newLocation.x / 100][newLocation.y / 100] = componentLabel;
+                        //Put the piece in the new location
+                        board.repaint();
+                    });
                 }
                 //Only the pieces can be moved
 
                 board.add(componentLabel, layer);
+
+                return componentLabel;
             }
         }
+        return null;
     }
 
     public static String translatePieceToURL(char piece){
